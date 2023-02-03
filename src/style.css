@@ -1,0 +1,67 @@
+
+.container {
+  width:100%;
+  display: grid;
+  grid-template-columns: 66% 33%;
+  gap: 10px;
+  padding: 0px;
+  color:#000;
+  box-sizing: border-box;
+  text-align: left;
+  
+}
+.jobs{
+  padding: 5px;
+}
+.side{
+  min-height: 100vh;
+  padding-left: 10px;
+  background-color:#FFE8A3;
+}
+.job,.jobForm {
+  display: inline-block;
+  margin: 5px;
+}
+textarea{
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+  display: block;  
+  color: #000;
+  width: 100%;
+}
+input {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+  color: #000;
+  display: block;
+  width:300px;
+  padding: 20px;
+  height: 1em;
+}
+button{
+  width: 100%;
+  background-color: orange;
+  height: 4rem;
+}
+.job {  
+  width: 40%;
+  border-radius: 20px;
+  color: #000;
+  padding-left:10px;
+  background-color: #fff;
+}
+
+/**When the application is viewed on a mobile **/
+
+@media only screen and (max-width: 640px) {
+  .container {
+    display: inline-block;
+  }
+  .job{
+    width: 90%;
+  }
+}
